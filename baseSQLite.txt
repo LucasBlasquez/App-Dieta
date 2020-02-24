@@ -1,0 +1,15 @@
+create table produto(
+codigo integer primary key autoincrement,
+descr text,
+unidade real,
+caloria real);
+
+create table consumo(
+codigo integer primary key autoincrement,
+codproduto integer not null,
+dia integer,
+mes integer,
+ano integer,
+hora integer,
+minuto integer,
+qtde real);
